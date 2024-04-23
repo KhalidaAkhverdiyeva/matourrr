@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid--container {
+  display: grid;
+  height: 100vh;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas:
+    " onuc onuc doqquz doqquz onsekkiz bir bir iyirmi iyirmi onbes "
+    " onuc onuc bes alti alti bir bir onbir uc uc "
+    " iyirmiiki iyirmiiki bes alti alti sekkiz sekkiz onbir uc uc  "
+    " yeddi onalti onalti iki iki ondoqquz ondord ondord iyirmibir iyirmibir"
+    " iyirmidord iyirmidord onyeddi iki iki dord dord iyirmiuc iyirmibir iyirmibir"
+    " iyirmidord iyirmidord onyeddi oniki oniki  dord dord iyirmiuc on on ";
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
+}
+.grid--container > div {
+  background-color: white;
+  font-size: 42px;
+  font-weight: 500;
+  border: 1px solid black;
+  display: grid;
+  align-content: end;
+  justify-content: end;
+}
+.grid--container > :nth-child(1) {
+  grid-area: bir;
+  background-color: yellow;
+}
+.grid--container > :nth-child(2) {
+  grid-area: iki;
+}
+.grid--container > :nth-child(3) {
+  grid-area: uc;
+  background-color: white;
+}
+.grid--container > :nth-child(13) {
+  grid-area: onuc;
+  background-color: rgb(128, 229, 128);
+}
+.grid--container > :nth-child(9) {
+  grid-area: doqquz;
+  background-color: white;
+}
+.grid--container > :nth-child(18) {
+  grid-area: onsekkiz;
+  background-color: blue;
+}
+.grid--container > :nth-child(20) {
+  grid-area: iyirmi;
+  background-color: white;
+}
+.grid--container > :nth-child(15) {
+  grid-area: onbes;
+  background-color: pink;
+}
+.grid--container > :nth-child(5) {
+  grid-area: bes;
+  background-color: white;
+}
+.grid--container > :nth-child(6) {
+  grid-area: alti;
+  background-color: pink;
+}
+.grid--container > :nth-child(11) {
+  grid-area: onbir;
+  background-color: blue;
+}
+.grid--container > :nth-child(22) {
+  grid-area: iyirmiiki;
+  background-color: yellow;
+}
+.grid--container > :nth-child(8) {
+  grid-area: sekkiz;
+  background-color: white;
+}
+.grid--container > :nth-child(7) {
+  grid-area: yeddi;
+  background-color: white;
+}
+
+.grid--container > :nth-child(16) {
+  grid-area: onalti;
+  background-color: white;
+}
+.grid--container > :nth-child(19) {
+  grid-area: ondoqquz;
+  background-color: pink;
+}
+.grid--container > :nth-child(14) {
+  grid-area: ondord;
+}
+.grid--container > :nth-child(21) {
+  grid-area: iyirmibir;
+  background-color: yellow;
+}
+.grid--container > :nth-child(24) {
+  grid-area: iyirmidord;
+  background-color: blue;
+}
+
+.grid--container > :nth-child(17) {
+  grid-area: onyeddi;
+}
+.grid--container > :nth-child(4) {
+  grid-area: dord;
+  background-color: rgb(128, 229, 128);
+}
+
+.grid--container > :nth-child(23) {
+  grid-area: iyirmiuc;
+}
+
+.grid--container > :nth-child(12) {
+  grid-area: oniki;
+}
+.grid--container > :nth-child(10) {
+  grid-area: on;
+}
