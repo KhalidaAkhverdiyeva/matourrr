@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.black--navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #252525;
+  padding: 20px;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.phone i {
+  color: #B78D65;
+}
+.phone a {
+  color: grey;
+  text-decoration: none;
+}
+
+.mail i {
+  color: #B78D65;
+}
+.mail a {
+  color: grey;
+  text-decoration: none;
+}
+
+.terms--pri {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.terms--pri > div {
+  color: grey;
+}
+
+.left--side {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.icons--bar {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #B78D65;
+  padding: 5px;
+  flex: 1;
+  width: 32px;
+}
+.icons i {
+  color: #B78D65;
+  padding: 3px;
+}
+
+.white--navbar {
+  display: flex;
+}
+.white--navbar .white--left {
+  display: flex;
+}
+.white--navbar .white--right {
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */

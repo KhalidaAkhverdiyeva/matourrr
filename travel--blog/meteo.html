@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      const tailwindConfig = {
+        theme: {
+          extend: {
+            animation: {
+              slider: "slider 16s ease-in infinite",
+            },
+            keyframes: {
+              slider: {
+                "0%,100%": {
+                  backgroundImage: "url(./slide1.jpg)",
+                },
+                "25%": {
+                  backgroundImage: "url(./slide2.jpg)",
+                },
+                "50%": {
+                  backgroundImage: "url(./slide3.jpg)",
+                },
+                "75%": { backgroundImage: "url(./slide4.jpg)" },
+              },
+            },
+          },
+        },
+      };
+      //sekillerin aspect ration temasini oyren
+
+      //from this part i understand nothing
+      tailwind.config = tailwindConfig;
+
+      const element = document.getElementById("ilkseh");
+      element.classList.add("animate-slider");
+    </script>
+  </head>
+  <body>
+    <div
+      id="sliderbackground"
+      class="animate-slider bg-center bg-cover h-screen w-screen"
+    >
+      <div
+        class="lg:container lg:mx-auto lg:flex lg:flex-col lg:gap-[200px] lg:px-20"
+      >
+        <div class="flex justify-between items-center h-[auto] p-5">
+          <div class="flex">
+            <img class="w-[150px]" src="./matour-logo_1.png" alt="" />
+          </div>
+          <div
+            class="hidden lg:block lg:flex lg:text-white lg:text-[14px] lg:gap-[20px] lg:border-solid lg:border-[1px] lg:border-white lg:px-10 lg:py-4 lg:rounded-2xl"
+          >
+            <div>HOME</div>
+            <div>ABOUT US</div>
+            <div>DESTINATION</div>
+            <div>PAGE</div>
+            <div>BLOG</div>
+          </div>
+          <div class="flex text-white">
+            <i class="fa-solid fa-bars text-[30px]"></i>
+          </div>
+        </div>
+        <div class="flex items-end justify-between p-3 lg:gap-[400px]">
+          <div class="flex flex-col gap-3 items-start">
+            <div
+              class="border-solid border-2 border-transparent bg-black/10 shadow-lg p-3 rounded-3xl"
+            >
+              <button class="text-[16px] text-white">
+                Fill The Experience
+              </button>
+            </div>
+            <div class="text-[44px] text-white lg:text-[74px] lg:font-[700]">
+              Explore The Majectic Asia Landscape Now
+            </div>
+            <div>
+              <button
+                class="bg-white px-7 py-4 rounded-[30px] flex justify-center items-center gap-[16px]"
+              >
+                <span class="text-[16px]">GET STARTED</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="flex flex-col gap-[30px] py-3 lg:flex lg:flex-row">
+              <div>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula.
+              </div>
+              <div>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula.
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div
+              class="p-3 border-solid border-white border-[1px] bg-white/10 rounded-full flex justify-center items-center"
+            >
+              <i class="fa-brands fa-facebook-f text-white"></i>
+            </div>
+            <div
+              class="p-3 border-solid border-white border-[1px] bg-white/10 rounded-full flex justify-center items-center"
+            >
+              <i class="fa-brands fa-twitter text-white"></i>
+            </div>
+            <div
+              class="p-3 border-solid border-white border-[1px] bg-white/10 rounded-full flex justify-center items-center"
+            >
+              <i class="fa-brands fa-instagram text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
